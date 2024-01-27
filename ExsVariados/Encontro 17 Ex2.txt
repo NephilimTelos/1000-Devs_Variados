@@ -1,0 +1,22 @@
+main()
+
+function main() {
+    let salarioMinimo
+    let salarioFuncionario
+    
+    salarioMinimo = obterValorFracionario("Digite qual é o salário mínimo: ")
+    salarioFuncionario = obterValorFracionario("Digite o salário do funcionário: ")
+    
+    console.log("O funcionário recebe "+ arredondar2casas(salarioFuncionario,salarioMinimo) + " salários mínimos" ) // desafio 1
+    
+}
+
+function obterValorFracionario(mensagem) {
+    return parseFloat(prompt(mensagem))
+}
+
+function arredondar2casas(salarioMinimo, salarioFuncionario)
+{
+    return (salarioMinimo/salarioFuncionario).toFixed(2)
+}
+
